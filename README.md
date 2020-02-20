@@ -7,7 +7,7 @@ npm i vo-storage-control
 ```
 
 Настройка файла configureStore.js:
-```
+```javascript
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
@@ -37,7 +37,7 @@ export default createStore(combineReducers({
 ```
 
 Настройка слоя redux:
-```
+```javascript
 import { connectAdvanced, shallowEqual } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import isNull from 'lodash/isNull';
@@ -82,7 +82,7 @@ export default connectAdvanced((dispatch) => {
 ```
 
 Файл service:
-```
+```javascript
 export default function actionService(action, data, options) {
   switch (toUpper(action)) {
     case 'MODELNAME_HEADER':
