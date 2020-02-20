@@ -7,7 +7,17 @@
     "gulp_build": "gulp build",
     "prod": "NODE_ENV=production babel src --out-dir build --extensions '.js'"
   },
-  "author": "Anton Badashov",
+  "keywords": [
+    "redux",
+    "react",
+    "middleware",
+    "vo-storage-control"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badahov/vo-storage-control.git"
+  },
+  "author": "Anton Badashov <info@vitaopus.ru>",
   "license": "MIT",
   "engines": {
     "node": ">=11.10.1"
@@ -16,6 +26,10 @@
     "lodash": "^4.17.15",
     "redux": "^4.0.5"
   },
+  "bugs": {
+    "url": "https://github.com/badahov/vo-storage-control/issues"
+  },
+  "homepage": "https://github.com/badahov/vo-storage-control#readme",
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/cli": "^7.8.4",
