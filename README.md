@@ -13,9 +13,6 @@ import thunk from 'redux-thunk';
 
 import { middleware, reducer } from 'vo-storage-control';
 
-// Найдет и загрузит все reducers из папки
-import * as reducers from './reducers';
-
 const middlewareAll = [
   middleware('moduleName'),
   thunk,
