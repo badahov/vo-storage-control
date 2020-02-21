@@ -23,7 +23,7 @@ const module = {
   models: [
     {
       name: 'modelName',
-      events: ['filter', 'data'],
+      events: ['filter', 'data', {name: 'DefaultName'}],
     },
   ],
 };
