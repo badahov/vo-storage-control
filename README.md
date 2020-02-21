@@ -57,7 +57,7 @@ export default connectAdvanced((dispatch) => {
       bindAction.worker('modelName_filter', data, null);
     };
 
-    /// Здесь можно определить props для компонента
+    // Здесь можно определить props для компонента
     const items = isNull(nextState['moduleName']['modelName'].data.result)
       ? null
       : nextState['moduleName']['modelName'].data.result.items;

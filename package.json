@@ -27,7 +27,8 @@
     "redux": "^4.0.5"
   },
   "bugs": {
-    "url": "https://github.com/badahov/vo-storage-control/issues"
+    "url": "https://github.com/badahov/vo-storage-control/issues",
+    "email" : "info@vitaopus.ru"
   },
   "homepage": "https://github.com/badahov/vo-storage-control#readme",
   "devDependencies": {
