@@ -1,10 +1,12 @@
 import toUpper from 'lodash/toUpper';
+import isFunction from 'lodash/isFunction';
 
 const middlewareAction = (store, action) => {
   const STATUS_WAIT = 'wait';
   const STATUS_OK = 'ok';
   const STATUS_ERROR = 'error';
   const [status, result, message] = action.actions;
+  const callback = action.callback;
 
   const processResult = (data) => {
     if (data.hasOwnProperty('status') && data.hasOwnProperty('result')) {
@@ -25,6 +27,10 @@ const middlewareAction = (store, action) => {
           type: toUpper(status),
           data: STATUS_OK,
         });
+
+        if (isFunction(callback)) {
+          callback(data);
+        }
 
         return data.result;
       } else if (data.status === STATUS_ERROR) {

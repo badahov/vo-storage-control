@@ -1,10 +1,10 @@
 {
   "name": "vo-storage-control",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Storage control",
   "main": "lib/index.js",
   "scripts": {
-    "gulp_build": "gulp build",
+    "build": "gulp build",
     "prod": "NODE_ENV=production babel src --out-dir build --extensions '.js'"
   },
   "keywords": [
@@ -28,7 +28,7 @@
   },
   "bugs": {
     "url": "https://github.com/badahov/vo-storage-control/issues",
-    "email" : "info@vitaopus.ru"
+    "email": "info@vitaopus.ru"
   },
   "homepage": "https://github.com/badahov/vo-storage-control#readme",
   "devDependencies": {
