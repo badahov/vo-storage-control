@@ -34,6 +34,10 @@ const middlewareAction = (store, action) => {
 
         return data.result;
       } else if (data.status === STATUS_ERROR) {
+        if (isFunction(callback)) {
+          callback(data);
+        }
+
         if (data.hasOwnProperty('msg')) {
           throw data.msg;
         } else {
